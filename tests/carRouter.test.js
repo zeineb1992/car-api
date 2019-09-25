@@ -1,5 +1,5 @@
 const chai = require('chai');
-const app = require('../app')
+const app = require('../app');
 
 chai.use(require('chai-http'));
 chai.should();
@@ -13,7 +13,7 @@ describe('Car router', function () {
                 res.should.have.status(200);
                 res.body.should.be.a('object');
                 done();
-            })
-        })
-    })
-})
+            });
+        });
+    });
+});
